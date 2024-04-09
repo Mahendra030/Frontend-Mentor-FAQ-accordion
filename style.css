@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    height: 100vh;
+    background-image: url("./images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 75vmin;
+    height: 570px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 2.3rem;
+    margin-top: 110px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 840px) {
+    .wrapper {
+        width: 80vmin;
+        height: 80%;
+        margin-top: 20px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0.25rem auto;
+}
+
+.header h1 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.container {
+    padding-top: 0.25rem;
+}
+
+.section {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-question:hover {
+    color: #AD28EB;
+}
+
+.section-question h2 {
+    font-size: 18px;
+}
+
+.section-question .holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section p {
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    color: hsl(292, 16%, 49%);
+}
+
+hr {
+    border: 0.5px solid hsla(275, 100%, 97%, 0.5);
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    main {
+        background-image: url("./images/background-pattern-mobile.svg");
+    }
+
+    .wrapper {
+        width: 85vmin;
+        padding: 1.5rem;
+    }
+
+    .header svg {
+        height: 31px;
+    }
+
+    .section-question h2 {
+        font-size: 16px;
+    }
+
+    .section-question p {
+        font-size: 14px;
+    }
+
+    .section-question:hover {
+        color: black;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
